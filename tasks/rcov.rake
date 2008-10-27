@@ -29,20 +29,4 @@ namespace :test do
     run_coverage Dir["test/**/*.rb"]
   end
   
-  namespace :coverage do
-    desc "Runs coverage on unit tests"
-    task :units do
-      run_coverage Dir["test/unit/**/*.rb"]
-    end
-    
-    desc "Runs coverage on functional tests"
-    task :functionals do
-      run_coverage Dir["test/functional/**/*.rb"]
-    end
-    
-    desc "Runs coverage on integration tests"
-    task :integration do
-      run_coverage Dir["test/integration/**/*.rb"]
-    end
-  end
 end
