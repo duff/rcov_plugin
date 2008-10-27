@@ -19,6 +19,7 @@ def run_coverage(files)
   rcov = "rcov --rails -Ilib:test --sort coverage --text-report #{exclude} --no-validator-links"
   cmd = "#{rcov} #{files}"
   sh cmd
+  system("open coverage/index.html") if PLATFORM['darwin']
 end
 
 namespace :test do
