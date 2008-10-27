@@ -17,11 +17,7 @@ def run_coverage(files)
   end
   
   rcov = "rcov --rails -Ilib:test --sort coverage --text-report #{exclude} --no-validator-links"
-  puts
-  puts
-  puts "Running tests..."
   cmd = "#{rcov} #{files}"
-  puts cmd
   sh cmd
 end
 
