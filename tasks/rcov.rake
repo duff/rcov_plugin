@@ -24,7 +24,7 @@ end
 
 namespace :test do
   
-  desc "Measures unit, functional, and integration test coverage"
+  desc "Measures test coverage using rcov."
   task :coverage do
     run_coverage Dir["test/**/*.rb"]
   end
